@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu fx:id="graph1" mnemonicParsing="false" text="Graph 1">
+               <items>
+                  <Menu fx:id="rotateMenu1" mnemonicParsing="false" text="Rotate">
+                    <items>
+                      <MenuItem fx:id="rotateLeft1" mnemonicParsing="false" text="Rotate Left" />
+                        <MenuItem fx:id="rotateRight1" mnemonicParsing="false" text="Rotate Right" />
+                    </items>
+                  </Menu>
+                  <MenuItem fx:id="pickColor1" mnemonicParsing="false" text="Change Color" />
+                  <Menu mnemonicParsing="false" text="Change Scale">
+                     <items>
+                        <MenuItem fx:id="scaleD1" mnemonicParsing="false" text="Scale doppelt so groß" />
+                        <MenuItem fx:id="scaleM1" mnemonicParsing="false" text="Scale halb so groß" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu fx:id="graph2" mnemonicParsing="false" text="Graph 2">
+               <items>
+                  <Menu fx:id="rotateMenu11" mnemonicParsing="false" text="Rotate">
+                     <items>
+                        <MenuItem fx:id="rotateLeft2" mnemonicParsing="false" text="Rotate Left" />
+                        <MenuItem fx:id="rotateRight2" mnemonicParsing="false" text="Rotate Right" />
+                     </items>
+                  </Menu>
+                  <MenuItem fx:id="pickColor2" mnemonicParsing="false" text="Change Color" />
+                  <Menu mnemonicParsing="false" text="Change Scale">
+                    <items>
+                        <MenuItem fx:id="scaleD2" mnemonicParsing="false" text="Scale doppelt so groß" />
+                      <MenuItem fx:id="scaleM2" mnemonicParsing="false" text="Scale halb so groß" />
+                    </items>
+                  </Menu>
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Pane fx:id="pane1" prefHeight="178.0" prefWidth="500.0" style="-fx-border-color: black;" />
+      <Pane fx:id="pane2" prefHeight="178.0" prefWidth="500.0" style="-fx-border-color: black;" />
+      <Label text="Konstante" />
+      <Slider fx:id="konstante" majorTickUnit="5.0" max="10.0" min="-10.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />
+      <Label text="Linearer Koeffizient" />
+      <Slider fx:id="linearerKoeffizient" majorTickUnit="5.0" max="10.0" min="-10.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />
+      <Label text="Quadratischer Koeffizient" />
+      <Slider fx:id="quadratischerKoeffizient" majorTickUnit="5.0" max="10.0" min="-10.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />
+      <Label text="Kubischer Koeffizient" />
+      <Slider fx:id="kubischerKoeffizient" majorTickUnit="5.0" max="10.0" min="-10.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />
+   </children>
+</VBox>
